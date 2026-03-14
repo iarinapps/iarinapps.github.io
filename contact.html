@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Iarin Apps</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 40px; }
+        .contact-info h3 { color: var(--primary); margin-top: 0; }
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; color: var(--dark); }
+        .form-group input, .form-group textarea { 
+            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; 
+            font-family: inherit; box-sizing: border-box;
+        }
+        .form-group textarea { height: 120px; resize: vertical; }
+        @media (max-width: 768px) { .contact-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <!-- Reusable Header -->
+    <header>
+        <a href="index.html" class="logo">IARIN APPS</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="apps.html">Our Apps</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 60px 8%;">
+        <h1>Get In Touch</h1>
+        <p>Have a question or a project idea? We'd love to hear from you.</p>
+    </section>
+
+    <div class="container">
+        <div class="contact-container">
+            <!-- Left Side: Contact Info -->
+            <div class="contact-info" style="text-align: left;">
+                <h3>Our Office</h3>
+                <p><strong>Email:</strong> support@iarinapps.com</p>
+                <p><strong>Business Hours:</strong> Mon - Fri, 9 AM - 6 PM</p>
+                
+                <h3 style="margin-top: 40px;">Why Contact Us?</h3>
+                <p>✅ Technical support for Tamil Radios Online.</p>
+                <p>✅ Inquiries for Web or Mobile App development.</p>
+                <p>✅ Advertising opportunities within our apps.</p>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="card">
+                <form action="#">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reusable Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Iarin Apps</h3>
+                <p>Bridging technology and tradition through high-quality app development.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="apps.html">Our Apps</a>
+                <a href="services.html">Services</a>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Iarin Apps. All rights reserved.</div>
+    </footer>
+</body>
+</html>
